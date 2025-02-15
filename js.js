@@ -27,7 +27,7 @@ let human = {
     }
 }
 console.log(human);
-console.log(human.I.my_name);
+console.log(`My name is ${human.I.my_name}, my surname is ${human.I.my_surname}, I'm ${human.I.my_old} years old`);
 
 //2
 let arr = [
@@ -61,14 +61,14 @@ let maried = []
 let single = []
 
 arr.forEach(elm => {
-    
-        if(elm.isMaried === true) {
-            maried.push(elm)
-        }else{
-            single.push(elm)
-        }
 
-    
+    if (elm.isMaried === true) {
+        maried.push(elm)
+    } else {
+        single.push(elm)
+    }
+
+
 })
 console.log(maried);
 console.log(single);
